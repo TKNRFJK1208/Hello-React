@@ -60,7 +60,7 @@ export default function ContactForm () {
 
       <button
         type="submit"
-        style={{ background: loader ? "#ccc" : " rgb(2, 2, 110)" }}
+        style={{ background: loader ? "#ccc" : " #fff" }}
       >
         Submit
       </button>

@@ -1,11 +1,16 @@
 .footer-container {
-  .copyright {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    margin-bottom: 30px;
-    text-align: center;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  z-index: 4;
+  position: absolute;
+  bottom: 0;
 
+  .copyright {
     p {
       color: white;
     }

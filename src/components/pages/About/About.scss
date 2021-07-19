@@ -1,15 +1,16 @@
 .about {
-  background-color: #000;
+  background-color: darkgoldenrod;
   text-align: center;
   margin: 0 auto;
   justify-content: center;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 
   h1 {
     color: #fff;
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin: 3rem;
   }
 
   .flex {
@@ -21,13 +22,15 @@
       width: 100%;
 
       img {
-        width: 300px;
+        width: 400px;
       }
     }
 
     .col-right {
+      width: 75%;
+
       h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 500;
         letter-spacing: 0.2rem;
         margin: 10px 0 5px;
@@ -39,6 +42,35 @@
         line-height: 2.5rem;
         font-weight: 300;
         letter-spacing: 0.05rem;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        margin-top: 60px;
+        overflow: hidden;
+        list-style: none;
+        justify-content: center;
+
+        .skill_list {
+          position: relative;
+          margin-bottom: 10px;
+          font-size: 12px;
+          color: #8c8c8c;
+        }
+        ::before {
+          content: '';
+          position: absolute;
+          top: 0.45em;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          width: 5px;
+          height: 5px;
+          margin-left: -20px;
+          border-top: 2px solid #24d6cf;
+          border-right: 2px solid #24d6cf;
+        }
       }
     }
   }

@@ -4,7 +4,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-function Icon ({ menuOpen, setMenuOpen }){
+function Icon (){ // { menuOpen, setMenuOpen }
   return(
     <div className="icons-container">
       <ul className="icon-menu">

@@ -1,7 +1,7 @@
 .menu {
   width: 300px;
   height: 100vh;
-  background-color: #15023a;
+  background-color: #000000;
   position: fixed;
   top: 0;
   right: -300px;
@@ -21,20 +21,34 @@
     padding: 0;
     list-style: none;
     font-size: 30px;
-    font-weight: 300;
     color: white;
     width: 60%;
 
     .nav-item {
       margin-bottom: 25px;
+
       .nav-links {
         font-size: inherit;
+        font-weight: 300;
         color: inherit;
         text-decoration: none;
       }
 
       &:hover {
-        font-weight: 500;
+        font-weight: 700;
+        color: grey;
+      }
+    }
+
+    .resume-link {
+      position: fixed;
+      bottom: 5vh;
+      padding-right: 15px;
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: grey;
       }
     }
   }
