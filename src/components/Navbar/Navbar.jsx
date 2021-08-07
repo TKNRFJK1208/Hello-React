@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
 
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
+
 function Navbar({ menuOpen, setMenuOpen }) {
+
   return (
     <>
       <nav className={"topbar " + (menuOpen && "active")}>
@@ -11,12 +14,30 @@ function Navbar({ menuOpen, setMenuOpen }) {
               <img src="images/navbar/logo.png" alt="" />
             </Link>
           </div>
-          <div className="right">
+          <div className="right nav-list">
             <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
               <span className="line1"></span>
               <span className="line2"></span>
               <span className="line3"></span>
             </div>
+            <ul>
+              <li>
+                <Link to='/' className='nav-links'>Home</Link>
+              </li>
+              <li>
+                <Link to='/about' className='nav-links'>About</Link>
+              </li>
+              <li>
+                <Link to='/work' className='nav-links'>Work</Link>
+              </li>
+              <li>
+                <Link to='/contact' className='nav-links'>Contact</Link>
+              </li>
+              <li>
+                <a href='https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:4c711f9d-8e60-41a6-a464-90ce4919bf50' className='nav-links' target="_blank" rel="noreferrer">Resume</a>
+                <OpenInNewIcon className="icon" />
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -25,36 +46,3 @@ function Navbar({ menuOpen, setMenuOpen }) {
 }
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-// for (var i = 0; i <= data.length-1; i++) {
-//   if(data[i].id === parseInt(id)) {
-//     console.log('1 more step')
-//     return (
-//       <div className="container" ref={modalRef} onClick={closeModal}>
-//         <div className="modal">
-//           <h2 id="dataId">{data.id}</h2>
-//           <h3>{data.title}</h3>
-//           <img src={data.img} alt="project detail" />
-//           <button onClick={() => setShowModal(false)}>X</button>
-//         </div>
-//       </div>,
-//       document.getElementById("portal")
-//     )
-//   } else{
-//     return false;
-//   }
-// };
-
-// {showModal ? openProject(): null}

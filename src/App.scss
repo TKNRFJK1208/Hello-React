@@ -9,7 +9,6 @@
 .work,
 .about,
 .contact {
-  display: flex;
   height: 100vh;
   background-color: #000;
   align-items: center;
@@ -20,14 +19,6 @@
 .work {
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.about {
-  background-position: center;
-  background-size: fill;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;

@@ -1,14 +1,21 @@
 .form {
   height: 100vh;
+  width: 65vw;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   h1 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   input {
+    margin-bottom: 50px;
+    min-width: 500px;
+    margin: 0 auto;
+
     textarea {
       padding: 20px;
       border-radius: 3px;
@@ -20,38 +27,41 @@
       outline: none;
     }
   }
-  :focus {
-    textarea:focus {
-      border: 1px solid #222;
-    }
-  }
 
   textarea {
     height: 150px;
-    max-width: 400px;
-    min-height: 100px;
+    min-width: 500px;
+    min-height: 300px;
+    margin: 0 auto;
+    border-radius: 3px;
   }
 
   label {
-    padding-bottom: 10px;
+    padding: 15px;
     color: #fff;
     font-weight: bold;
     font-size: 2rem;
   }
 
   button {
+    max-width: 500px;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 60px;
     border: none;
-    background-color: gray;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 500;
     border-radius: 3px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    margin-bottom: 10px;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #a1a0a0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
   }
-  :hover {
-    background-color: #222;
+  button:hover {
+    color: #222;
+    font-weight: 700;
+    font-size: 2rem;
   }
 }

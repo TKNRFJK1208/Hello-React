@@ -2,23 +2,30 @@ export const featuredPortfolio = [
     {
       id: 1,
       title: "Finance App",
-      img1:"/images/web-app/finance-app.jpg",
-      img2:"https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
-      img3:"https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
-      img4:"https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
+      img1:"/images/webPortfolio/finance/img1.jpg",
+      img2:"/images/webPortfolio/finance/img2.jpg",
+      img3:"/images/webPortfolio/finance/img3.jpg",
+      img4:"/images/webPortfolio/finance/img4.jpg",
       role: "Developer",
       date: "Jun 25, 2021",
       skills: "React, Firebase, Material UI",
       url: "https://finance-app-a9684.web.app/login",
       p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim. Aliquam vel tellus condimentum, scelerisque felis eu, fermentum urna. Suspendisse molestie congue eros, et blandit dolor. Mauris porttitor tincidunt eros eget iaculis.",
       p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim. Aliquam vel tellus condimentum, scelerisque felis eu, fermentum urna. Suspendisse molestie congue eros, et blandit dolor. Mauris porttitor tincidunt eros eget iaculis."
-
     },
     {
       id: 2,
       title: "Rampa UI Design",
-      img1:
-        "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+      img1:"https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+      img2:"/images/webPortfolio/finance/img2.jpg",
+      img3:"/images/webPortfolio/finance/img3.jpg",
+      img4:"/images/webPortfolio/finance/img4.jpg",
+      role: "Developer",
+      date: "Jun 25, 2021",
+      skills: "React, Firebase, Material UI",
+      url: "https://finance-app-a9684.web.app/login",
+      p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim. Aliquam vel tellus condimentum, scelerisque felis eu, fermentum urna. Suspendisse molestie congue eros, et blandit dolor. Mauris porttitor tincidunt eros eget iaculis.",
+      p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim. Aliquam vel tellus condimentum, scelerisque felis eu, fermentum urna. Suspendisse molestie congue eros, et blandit dolor. Mauris porttitor tincidunt eros eget iaculis."
     },
     {
       id: 3,

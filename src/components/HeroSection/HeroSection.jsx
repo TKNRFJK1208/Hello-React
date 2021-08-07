@@ -16,12 +16,12 @@ function HeroSection() {
 
   return (
     <div className='hero-container'>
-      <video src="/videos/video-1.mp4" autoPlay loop muted />
-      <h2>Hi there, I'm a fron-end developer</h2>
-      <h1>Taknori Fujiki</h1>
-      <p>
-        I love coding with <span ref={textRef}></span>
-      </p>
+      <video src="/videos/video.mp4" autoPlay loop muted />
+      <div className="text-contents">
+        <h2>Hi there, I'm a fron-end developer</h2>
+        <h1>Takanori Fujiki</h1>
+        <p>I love coding with <span ref={textRef}></span></p>
+      </div>
     </div>
   )
 }

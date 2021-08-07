@@ -6,8 +6,8 @@ import Footer from '../../Footer/Footer';
 import ReactDom from "react-dom";
 
 
-import {
 
+import {
   featuredPortfolio,
   webPortfolio,
   mobilePortfolio,
@@ -21,24 +21,16 @@ export default function Work() {
   const list = [
     {
       id: "featured",
-      title: "Featured",
-    },
-    {
-      id: "web",
       title: "Web App",
     },
     {
-      id: "mobile",
+      id: "web",
       title: "Mobile App",
     },
     {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
+      id: "mobile",
+      title: "Website",
+    }
   ];
 
   useEffect(() => {
@@ -144,16 +136,18 @@ export default function Work() {
       <div id="portal"></div>
       <div className={show ? "portfolio active" : "portfolio"} id="portfolio">
         <h1>Portfolio</h1>
-        <ul>
-          {list.map((item) => (
-            <PortfolioList
-              title={item.title}
-              active={selected === item.id}
-              setSelected={setSelected}
-              id={item.id}
-            />
-          ))}
-        </ul>
+        <div class="dropdown">
+          <ul>
+            {list.map((item) => (
+              <PortfolioList
+                title={item.title}
+                active={selected === item.id}
+                setSelected={setSelected}
+                id={item.id}
+              />
+            ))}
+          </ul>
+        </div>
         <div className="container">
           {data.map((d) => (
             <div className="item">
