@@ -1,0 +1,139 @@
+@import '../../global.scss';
+.topbar {
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  color: #15023a;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        width: 60px;
+        height: 60px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .right {
+      .hamburger {
+        width: 32px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        @include laptop {
+          display: none;
+        }
+
+        span {
+          width: 100%;
+          height: 3px;
+          background-color: #fff;
+          transform-origin: left;
+          transition: all 2s ease;
+        }
+      }
+      ul {
+        display: none;
+        @include laptop {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        li {
+          padding: 10px;
+          .nav-links {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+        :last-child {
+          display: flex;
+          align-items: center;
+        }
+        .icon {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &.active {
+    background-color: #222;
+    color: white;
+
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: white;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: white;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  .menu {
+    width: 300px;
+    height: 100vh;
+    background-color: #15023a;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+
+    &.active {
+      right: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 30px;
+      font-weight: 300;
+      color: white;
+      width: 60%;
+
+      li {
+        margin-bottom: 25px;
+        a {
+          font-size: inherit;
+          color: inherit;
+          text-decoration: none;
+        }
+
+        &:hover {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

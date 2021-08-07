@@ -1,0 +1,82 @@
+@import '../../../global.scss';
+
+.about {
+  background-color: darkgoldenrod;
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+  color: #fff;
+  padding: 150px 0;
+
+  h1 {
+    color: #fff;
+    font-size: 3rem;
+  }
+
+  .pf-box {
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .col-left {
+      padding-top: 50px;
+      img {
+        width: 50%;
+        height: fit-content;
+      }
+    }
+
+    .col-right {
+      width: 65vw;
+      margin: 0 auto;
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        margin-top: 60px;
+        overflow: hidden;
+        list-style: none;
+        justify-content: center;
+
+        .skill_list {
+          position: relative;
+          margin-bottom: 10px;
+          font-size: 12px;
+          color: #222;
+        }
+        ::before {
+          content: '';
+          position: absolute;
+          top: 0.45em;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          width: 5px;
+          height: 5px;
+          margin-left: -20px;
+          border-top: 2px solid #24d6cf;
+          border-right: 2px solid #24d6cf;
+        }
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        margin: 10px 0 5px;
+        padding-top: 30px;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-top: 5px;
+        line-height: 2.5rem;
+        font-weight: 300;
+        letter-spacing: 0.05rem;
+      }
+    }
+  }
+}
