@@ -1,3 +1,4 @@
+@import '../../global.scss';
 .icons-container {
   position: fixed;
   bottom: 0;
@@ -7,6 +8,9 @@
   .icon-menu {
     .icon {
       margin: 5px;
+      @include tablet {
+        margin: 10px;
+      }
 
       a {
         color: #fff;
@@ -19,6 +23,9 @@
       height: 200px;
       background-color: #fff;
       margin: 50px auto;
+      @include tablet {
+        margin: 70px auto;
+      }
     }
   }
 }

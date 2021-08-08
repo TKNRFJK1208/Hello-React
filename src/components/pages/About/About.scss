@@ -1,5 +1,4 @@
 @import '../../../global.scss';
-
 .about {
   background-color: darkgoldenrod;
   text-align: center;
@@ -24,8 +23,15 @@
     .col-left {
       padding-top: 50px;
       img {
-        width: 50%;
+        width: 300px;
         height: fit-content;
+        border-radius: 10px;
+        box-shadow: 31px 18px 21px -19px #222;
+
+        @include tablet {
+          max-height: 500px;
+          width: auto;
+        }
       }
     }
 
@@ -44,8 +50,12 @@
         .skill_list {
           position: relative;
           margin-bottom: 10px;
-          font-size: 12px;
+          font-size: 1rem;
           color: #222;
+          @include tablet {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+          }
         }
         ::before {
           content: '';
@@ -68,6 +78,9 @@
         letter-spacing: 0.2rem;
         margin: 10px 0 5px;
         padding-top: 30px;
+        @include tablet {
+          font-size: 1.5rem;
+        }
       }
 
       p {
@@ -76,6 +89,9 @@
         line-height: 2.5rem;
         font-weight: 300;
         letter-spacing: 0.05rem;
+        @include tablet {
+          font-size: 1.3rem;
+        }
       }
     }
   }

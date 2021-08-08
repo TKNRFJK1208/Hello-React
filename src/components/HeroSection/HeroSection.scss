@@ -25,18 +25,27 @@
     h2 {
       color: inherit;
       font-size: 1.5rem;
+      @include tablet {
+        font-size: 2rem;
+      }
     }
 
     h1 {
       color: inherit;
       margin-bottom: 10px;
       font-size: 3rem;
+      @include tablet {
+        font-size: 4rem;
+      }
     }
 
     p {
       margin-top: 8px;
       color: inherit;
       font-size: 1.5rem;
+      @include tablet {
+        font-size: 2rem;
+      }
     }
   }
 }
