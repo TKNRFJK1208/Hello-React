@@ -16,10 +16,10 @@ export default function About() {
           <div className="col-right">
             <ul>
               <li className="skill_list">JavaScript (ES6+)</li>
-              <li className="skill_list">HTML 5 &amp; (S)CSS</li>
+              <li className="skill_list">HTML 5&amp;(S)CSS</li>
               <li className="skill_list">React &amp; Redux</li>
               <li className="skill_list">TypeScript</li>
-              <li className="skill_list">PHP</li>
+              <li className="skill_list">GitHub</li>
               <li className="skill_list">WordPress</li>
               <li className="skill_list">Firebase</li>
               <li className="skill_list">jQuery</li>

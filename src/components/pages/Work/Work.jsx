@@ -5,6 +5,9 @@ import Icon from '../../Icon/Icon';
 import Footer from '../../Footer/Footer';
 import ReactDom from "react-dom";
 
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
+
 
 
 import {
@@ -121,8 +124,14 @@ export default function Work() {
               </div>
             </section>
             <div className='cta-sec'>
-              <button className='btn' onClick={() => setShow(false)}>BACK</button>
-              <a className='btn' href={project.url} target="_blank" rel="noreferrer"><span>VISIT</span></a>
+              <button className='btn' onClick={() => setShow(false)}>
+                <ArrowBackIcon className="icon" />
+                <span>BACK</span>
+              </button>
+              <a className='btn' href={project.url} target="_blank" rel="noreferrer">
+                <OpenInNewIcon className="icon" />
+                <span>VISIT</span>
+              </a>
             </div>
           </div>,
           document.getElementById("portal")

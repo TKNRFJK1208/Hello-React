@@ -1,3 +1,4 @@
+@import '../../../global.scss';
 #portal {
   height: 100vh;
   width: 100%;
@@ -8,7 +9,9 @@
   z-index: -1;
 
   .container {
-    margin: 120px;
+    width: 65vw;
+    margin: 0 auto;
+    padding: 150px 0;
 
     h2 {
       font-size: 3rem;
@@ -17,19 +20,19 @@
     }
 
     .sec1 {
-      display: flex;
       margin: 50px auto;
       align-items: center;
 
       .col-left {
-        flex-basis: 50%;
-        max-width: 55%;
-        margin-right: 40px;
+        @include laptop {
+          flex-basis: 50%;
+          max-width: 55%;
+          margin-right: 40px;
+        }
 
         h3 {
           font-size: 1.5rem;
           color: #fff;
-          padding-bottom: 20px;
           &::after {
             content: '';
             display: block;
@@ -41,12 +44,16 @@
 
         p {
           color: #fff;
+          line-height: 25px;
+          padding: 30px 0;
         }
       }
 
       .col-right {
-        flex-basis: 50%;
-        max-width: 50%;
+        @include laptop {
+          flex-basis: 50%;
+          max-width: 50%;
+        }
 
         img {
           width: 100%;
@@ -56,20 +63,20 @@
       }
     }
     .sec2 {
-      display: flex;
       margin: 100px auto 50px auto;
       align-items: center;
       flex-direction: row-reverse;
 
       .col-right {
-        flex-basis: 50%;
-        max-width: 55%;
-        margin-left: 40px;
+        @include laptop {
+          flex-basis: 50%;
+          max-width: 55%;
+          margin-left: 40px;
+        }
 
         h3 {
           font-size: 1.5rem;
           color: #fff;
-          padding-bottom: 20px;
           &::after {
             content: '';
             display: block;
@@ -81,12 +88,16 @@
 
         p {
           color: #fff;
+          line-height: 25px;
+          padding: 30px 0;
         }
       }
 
       .col-left {
-        flex-basis: 50%;
-        max-width: 50%;
+        @include laptop {
+          flex-basis: 50%;
+          max-width: 50%;
+        }
 
         img {
           width: 100%;
@@ -99,7 +110,10 @@
       background-color: #999;
       display: flex;
       border-radius: 10px;
-      padding: 35px 20px 35px 85px;
+      padding: 35px 20px 35px 20px;
+      @include laptop {
+        padding: 35px 20px 35px 70px;
+      }
 
       .col-left {
         flex-basis: 65%;
@@ -156,21 +170,27 @@
         }
       }
       .img-sec {
-        display: flex;
         align-items: center;
+        @include laptop {
+          display: flex;
+        }
 
         img {
           width: 100%;
           height: auto;
           border-radius: 15%;
-          padding: 0 20px;
+          padding: 20px;
         }
       }
     }
     .cta-sec {
       text-align: center;
+      justify-content: center;
       display: flex;
-      justify-content: space-evenly;
+      flex-direction: column;
+      @include tablet {
+        flex-direction: inherit;
+      }
 
       .btn {
         height: 50px;
@@ -184,6 +204,7 @@
         align-items: center;
         display: flex;
         border: none;
+        margin: 20px auto;
       }
       :hover {
         background-color: #999;
