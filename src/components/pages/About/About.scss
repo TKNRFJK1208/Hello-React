@@ -12,6 +12,9 @@
   h1 {
     color: #fff;
     font-size: 3rem;
+    @include laptop {
+      font-size: 4rem;
+    }
   }
 
   .pf-box {
@@ -19,9 +22,19 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    @include laptop {
+      display: flex;
+      flex-direction: row;
+      width: 85vw;
+    }
 
     .col-left {
       padding-top: 50px;
+      @include laptop {
+        flex-basis: 50%;
+        max-width: 45%;
+      }
       img {
         width: 300px;
         height: fit-content;
@@ -32,44 +45,20 @@
           max-height: 500px;
           width: auto;
         }
+        @include laptop {
+          width: 440px;
+          height: 440px;
+          width: auto;
+        }
       }
     }
 
     .col-right {
       width: 65vw;
       margin: 0 auto;
-
-      ul {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(140px, 200px));
-        margin-top: 60px;
-        overflow: hidden;
-        list-style: none;
-        justify-content: center;
-
-        .skill_list {
-          position: relative;
-          margin-bottom: 10px;
-          font-size: 1rem;
-          color: #222;
-          @include tablet {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
-          }
-        }
-        ::before {
-          content: '';
-          position: absolute;
-          top: 0.45em;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-          width: 5px;
-          height: 5px;
-          margin-left: -20px;
-          border-top: 2px solid #24d6cf;
-          border-right: 2px solid #24d6cf;
-        }
+      @include laptop {
+        flex-basis: 50%;
+        max-width: 55%;
       }
 
       h2 {
@@ -93,6 +82,44 @@
           font-size: 1.3rem;
         }
       }
+    }
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 50px));
+    margin-top: 60px;
+    overflow: hidden;
+    list-style: none;
+    justify-content: center;
+    @include tablet {
+      grid-template-columns: repeat(2, minmax(140px, 200px));
+    }
+    @include laptop {
+      grid-template-columns: repeat(2, minmax(140px, 400px));
+    }
+
+    .skill_list {
+      position: relative;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #222;
+      @include tablet {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+      }
+    }
+    ::before {
+      content: '';
+      position: absolute;
+      top: 0.45em;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      width: 5px;
+      height: 5px;
+      margin-left: -20px;
+      border-top: 2px solid #24d6cf;
+      border-right: 2px solid #24d6cf;
     }
   }
 }

@@ -17,11 +17,17 @@
       font-size: 3rem;
       color: #fff;
       text-align: center;
+      @include laptop {
+        font-size: 4rem;
+      }
     }
 
     .sec1 {
       margin: 50px auto;
       align-items: center;
+      @include laptop {
+        display: flex;
+      }
 
       .col-left {
         @include laptop {
@@ -66,6 +72,9 @@
       margin: 100px auto 50px auto;
       align-items: center;
       flex-direction: row-reverse;
+      @include laptop {
+        display: flex;
+      }
 
       .col-right {
         @include laptop {
@@ -112,7 +121,7 @@
       border-radius: 10px;
       padding: 35px 20px 35px 20px;
       @include laptop {
-        padding: 35px 20px 35px 70px;
+        padding: 35px 20px 35px 55px;
       }
 
       .col-left {
@@ -127,6 +136,7 @@
           padding-top: 10px;
           font-size: 1.3rem;
           color: #fff;
+          text-transform: uppercase;
           &:last-child {
             padding-top: 5px;
           }
@@ -146,6 +156,7 @@
           padding-top: 10px;
           font-size: 1.3rem;
           color: #fff;
+          text-transform: uppercase;
         }
         p {
           color: #fff;
@@ -231,6 +242,9 @@
   h1 {
     font-size: 3rem;
     color: #fff;
+    @include laptop {
+      font-size: 4rem;
+    }
   }
 
   .dropdown {
@@ -242,6 +256,11 @@
       padding: 0;
       list-style: none;
       li {
+        font-size: 1rem;
+        padding: 10px;
+        @include laptop {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -255,6 +274,8 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 30px;
+    width: 80vw;
+    margin: 0 auto;
 
     .item {
       width: 220px;
@@ -269,6 +290,9 @@
       position: relative;
       transition: all 0.5s ease;
       cursor: pointer;
+      @include laptop {
+        margin: 13px 27px;
+      }
 
       h3 {
         position: absolute;
@@ -283,7 +307,7 @@
       }
 
       &:hover {
-        background-color: blue;
+        background-color: darkcyan;
         img {
           opacity: 0.2;
           z-index: 0;
