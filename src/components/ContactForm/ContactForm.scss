@@ -1,14 +1,18 @@
+@import '../../global.scss';
 .form {
-  height: 100vh;
   width: 65vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 150px 0;
 
   h1 {
     margin-bottom: 30px;
+    @include laptop {
+      margin-bottom: 50px;
+    }
   }
 
   input {
@@ -58,7 +62,7 @@
     margin: 80px auto 20px;
   }
   button:hover {
-    background-color: #999;
+    background-color: #222;
     color: #fff;
   }
 }

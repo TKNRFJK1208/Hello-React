@@ -11,6 +11,9 @@
       @include tablet {
         margin: 10px;
       }
+      @include laptop {
+        margin: 15px;
+      }
 
       a {
         color: #fff;

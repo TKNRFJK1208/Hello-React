@@ -144,7 +144,7 @@ export default function Work() {
     <>
       <div id="portal"></div>
       <div className={show ? "portfolio active" : "portfolio"} id="portfolio">
-        <h1>Portfolio</h1>
+        <h1>My Projects</h1>
         <div class="dropdown">
           <ul>
             {list.map((item) => (

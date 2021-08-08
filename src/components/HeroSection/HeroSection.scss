@@ -28,6 +28,9 @@
       @include tablet {
         font-size: 2rem;
       }
+      @include laptop {
+        font-size: 3rem;
+      }
     }
 
     h1 {
@@ -36,6 +39,9 @@
       font-size: 3rem;
       @include tablet {
         font-size: 4rem;
+      }
+      @include laptop {
+        font-size: 5rem;
       }
     }
 

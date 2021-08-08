@@ -12,8 +12,11 @@
   .wrapper {
     display: flex;
     align-items: center;
-    padding: 5px 30px;
+    padding: 2px 20px;
     justify-content: space-between;
+    @include laptop {
+      background-color: #222;
+    }
 
     .left {
       display: flex;
@@ -62,6 +65,9 @@
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
+          }
+          :hover {
+            color: aquamarine;
           }
         }
         :last-child {
@@ -133,6 +139,9 @@
         &:hover {
           font-weight: 500;
         }
+      }
+      &:hover {
+        color: darkcyan;
       }
     }
   }
