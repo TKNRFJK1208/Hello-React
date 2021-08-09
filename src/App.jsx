@@ -9,6 +9,8 @@ import Contact from './components/pages/Contact/Contact';
 import Navbar from './components/Navbar/Navbar';
 import Menu from './components/Menu/Menu';
 
+import NotFoundPage from './components/404/NotFoundPage';
+
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
@@ -22,6 +24,7 @@ function App() {
           <Route path='/work' component={Work} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
+          <Route path="*" component={NotFoundPage} />
         </Switch>
       </Router>
     </div>
