@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Unibody 8
+Author: Underware
+Url: http://www.fontsquirrel.com/fonts/unibody-8
+
+Font: Gilroy
+Author: Radomir Tinkov
+Url: https://www.fontsquirrel.com/fonts/gilroy

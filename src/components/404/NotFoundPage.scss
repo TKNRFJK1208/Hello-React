@@ -1,0 +1,81 @@
+@import '../../global.scss';
+.error {
+  background-color: cornflowerblue;
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+  color: #fff;
+  padding: 150px 0;
+
+  h1 {
+    color: #fff;
+    font-size: 3rem;
+    @include laptop {
+      font-size: 4rem;
+    }
+  }
+
+  .error-box {
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    @include laptop {
+      display: flex;
+      flex-direction: row;
+      width: 85vw;
+    }
+
+    .error-img {
+      padding-top: 50px;
+      @include laptop {
+        flex-basis: 50%;
+        max-width: 60%;
+      }
+      img {
+        width: 300px;
+        height: fit-content;
+        border-radius: 10px;
+        box-shadow: 31px 18px 21px -19px #222;
+
+        @include tablet {
+          max-height: 500px;
+          width: auto;
+        }
+        @include laptop {
+          width: 440px;
+          height: 440px;
+          width: auto;
+        }
+      }
+      button {
+        height: 50px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border: none;
+        margin: 30px auto;
+        box-shadow: 31px 18px 21px -19px #222;
+
+        a {
+          text-decoration: none;
+          color: #000;
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+      }
+      button:hover {
+        background-color: #222;
+        a:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -2,7 +2,6 @@ import React from 'react'
 import "./About.scss"
 import Icon from '../../Icon/Icon';
 import Footer from '../../Footer/Footer';
-import '../../../global.scss';
 
 export default function About() {
   return (
