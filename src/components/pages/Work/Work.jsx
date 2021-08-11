@@ -8,14 +8,10 @@ import ReactDom from "react-dom";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
-
-
 import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  featuredProjects,
+  webApp,
+  webSite
 } from "../../../data";
 
 export default function Work() {
@@ -24,14 +20,14 @@ export default function Work() {
   const list = [
     {
       id: "featured",
+      title: "Featured",
+    },
+    {
+      id: "webapp",
       title: "Web App",
     },
     {
-      id: "web",
-      title: "Mobile App",
-    },
-    {
-      id: "mobile",
+      id: "website",
       title: "Website",
     }
   ];
@@ -39,22 +35,16 @@ export default function Work() {
   useEffect(() => {
     switch (selected) {
       case "featured":
-        setData(featuredPortfolio);
+        setData(featuredProjects);
         break;
-      case "web":
-        setData(webPortfolio);
+      case "webapp":
+        setData(webApp);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
+      case "website":
+        setData(webSite);
         break;
       default:
-        setData(featuredPortfolio);
+        setData(featuredProjects);
     }
   }, [selected]);
 
@@ -82,7 +72,7 @@ export default function Work() {
                 <p>{project.p1}</p>
               </div>
               <div className="col-right">
-                <img src={project.img1} alt="project detail" />
+                <img src={project.img1} alt={project.title} />
               </div>
             </section>
             <section className="sec2">
@@ -91,7 +81,7 @@ export default function Work() {
                 <p>{project.p2}</p>
               </div>
               <div class="col-left">
-                <img src={project.img2} alt="project detail" />
+                <img src={project.img2} alt={project.title} />
               </div>
             </section>
             <section className="detail">
@@ -119,8 +109,8 @@ export default function Work() {
             <section className="sec3">
               <h3>Final Product Images</h3>
               <div className="img-sec">
-                <img src={project.img3} alt="project detail" />
-                <img src={project.img4} alt="project detail" />
+                <img src={project.img3} alt={project.title} />
+                <img src={project.img4} alt={project.title} />
               </div>
             </section>
             <div className='cta-sec'>
