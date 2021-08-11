@@ -56,15 +56,21 @@
       }
 
       .col-right {
-        @include laptop {
+        @include tablet {
           flex-basis: 50%;
           max-width: 50%;
+          margin: 0 auto;
+        }
+        @include desktop {
+          max-width: 30%;
         }
 
         img {
           width: 100%;
-          height: auto;
+          max-height: 500px;
           border-radius: 15%;
+          display: flex;
+          margin: 0 auto;
         }
       }
     }
@@ -103,15 +109,21 @@
       }
 
       .col-left {
-        @include laptop {
+        @include tablet {
           flex-basis: 50%;
           max-width: 50%;
+          margin: 0 auto;
+        }
+        @include desktop {
+          max-width: 30%;
         }
 
         img {
           width: 100%;
-          height: auto;
+          max-height: 500px;
           border-radius: 15%;
+          display: flex;
+          margin: 0 auto;
         }
       }
     }
@@ -182,15 +194,25 @@
       }
       .img-sec {
         align-items: center;
-        @include laptop {
+        justify-content: center;
+        @include tablet {
           display: flex;
+          justify-content: space-between;
         }
 
         img {
           width: 100%;
-          height: auto;
+          max-height: 500px;
           border-radius: 15%;
-          padding: 20px;
+          display: flex;
+          margin: 30px 10px;
+          @include laptop {
+            margin: 0 50px;
+          }
+          @include desktop {
+            max-width: 30%;
+            margin: 0 auto;
+          }
         }
       }
     }
@@ -215,7 +237,9 @@
         align-items: center;
         display: flex;
         border: none;
+        border-radius: 10px;
         margin: 20px auto;
+        box-shadow: 31px 18px 21px -19px #222;
       }
       :hover {
         background-color: #999;

@@ -1,205 +1,233 @@
-export const featuredPortfolio = [
+export const featuredProjects = [
     {
       id: 1,
       title: "Finance App",
-      img1:"/images/webPortfolio/finance/img1.jpg",
-      img2:"/images/webPortfolio/finance/img2.jpg",
-      img3:"/images/webPortfolio/finance/img3.jpg",
-      img4:"/images/webPortfolio/finance/img4.jpg",
+      img1:"/images/webApp/finance/img1.jpg",
+      img2:"/images/webApp/finance/img2.jpg",
+      img3:"/images/webApp/finance/img3.jpg",
+      img4:"/images/webApp/finance/img4.jpg",
       role: "Developer",
       date: "Jun 25, 2021",
-      skills: "React, Firebase, Material",
+      skills: "React, Sass, Firebase, Material, GitHub",
       url: "https://finance-app-a9684.web.app/login",
+      p1:"This app is the financial application. In short, it's the household account book app with login function. As a background story, my motive to develop this app was that my mom used to manege the cash flow by hand writing and it looked like troublesome. And she said that it is difficult to select which application is easy-to-use so that I decided to create simple finance application for her. Of course, this app has been designed for mobile devices like iOS and Android because she usually carry her smartphone and it would be more helpful.",
+      p2:"In this project, I implemented user registration function, login function, saving and removing data, and managing financial data by each month(under constructing). For those functions, I implemented by using node, React(Hooks), Firebase(Authentication, Cloud Firestore, Hosting), and CSS/material-ui. As a repository service, I used Git/GitHub to create each branches to suppose that I will be part of the project member. The most difficult part was to handle React hooks(useState, useEffect, useContect), it took almost 3 weeks to learn these concept in React."
+    },
+    {
+      id: 2,
+      title: "The Concept Lab",
+      img1:"/images/websiteProject/conceptLab/img1.jpg",
+      img2:"/images/websiteProject/conceptLab/img2.jpg",
+      img3:"/images/websiteProject/conceptLab/img3.jpg",
+      img4:"/images/websiteProject/conceptLab/img4.jpg",
+      role: "Developer",
+      date: "Aug 4, 2021",
+      skills: "HTML, Sass, PHP, JavaScript, Figma, Trello, GitHub",
+      url: "",
+      p1:"The Concept Lab is a company of four designers/developers who offer services in creating and maintaining various visual digital media and website development. The purpose of the website is to showcase its portfolio of work, promote its services, and create leads to generate new prospective clients. This is one of group projects in BCIT. We supposed that the targeted clients from small business owner or someone who needs help building a stronger online marketing presence with creating websites and social media presence.",
+      p2:"In this project, I was in charge of developer and listed testing tasks to Trello document except for coding in GitHub. Any bugs or issues encountered weere opened as Cards and placed under the Assigned list, and assigned to the Developer to fix. (https://trello.com/b/Ce1oaP7c/qa-concept-lab-qa-checklist) PHP contact mailer function exists at the bottom of the main page and it helps to get the message from clients. Clean and simple home page makes clients focus on the projects. All projects are coded through GitHub repository."
+    },
+    {
+      id: 3,
+      title: "Sake Lab",
+      img1:"/images/webApp/sakeLab/img1.jpg",
+      img2:"/images/webApp/sakeLab/img2.jpg",
+      img3:"/images/webApp/sakeLab/img3.jpg",
+      img4:"/images/webApp/sakeLab/img4.jpg",
+      role: "Developer",
+      date: "Aug 07, 2021",
+      skills: "JavaScript, Sass, Firebase, Cordova, PHP, Onsen UI",
+      url: "",
+      p1:"This app name is “Sake Lab”. In this app, user can browse the sake database to find the sake they look for as well as add them to the favorite list they own in accounts. This app consists of 5 main views, including the sign-up view, the home view, item detail views, the favorite-list view, and the setting view. Cross-site Scripting (XSS) exploit a client’s trust in a system. In the sign-in form, there is an input element which could be the security hole. As a countermeasure against this security issues, I used firebase authentication system.",
+      p2:"Through the sign-up form, user can create their account and login to the app. From the first viewing, user can access to the sake database to see sake’s information by clicking the detail button. In the item detail view, there are 2 call-to-actions. (Add-to-cart button, Favorite button) The add-to-cart button shows the toast. The favorite buttons will let user transfer to the favorite-list view with the selected item. In the favorite page, there is a remove function at the bottom of item card. In the setting page, user can manage the settings for functions and appearance of the app."
+    },
+    {
+      id: 4,
+      title: "Beach Resort",
+      img1:"/images/websiteProject/beachResort/img1.jpg",
+      img2:"/images/websiteProject/beachResort/img2.jpg",
+      img3:"/images/websiteProject/beachResort/img3.jpg",
+      img4:"/images/websiteProject/beachResort/img4.jpg",
+      role: "Developer",
+      date: "May 20, 2021",
+      skills: "HTML, CSS, JavaScript, GitHub",
+      url: "",
       p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim.",
       p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim."
     },
     {
-      id: 2,
-      title: "Rampa UI Design",
-      img1:"https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
-      img2:"/images/webPortfolio/finance/img2.jpg",
-      img3:"/images/webPortfolio/finance/img3.jpg",
-      img4:"/images/webPortfolio/finance/img4.jpg",
+      id: 5,
+      title: "Bamaga Dream Store",
+      img1:"/images/webApp/bamagaStore/img1.jpg",
+      img2:"/images/webApp/bamagaStore/img2.jpg",
+      img3:"/images/webApp/bamagaStore/img3.jpg",
+      img4:"/images/webApp/bamagaStore/img4.jpg",
+      role: "Developer",
+      date: "Jun 15, 2021",
+      skills: "JavaScript, CSS, Cordova, Onsen UI",
+      url: "",
+      p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim.",
+      p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim."
+    },
+    {
+      id: 6,
+      title: "Sport Crush",
+      img1:"/images/websiteProject/sportCrush/img1.jpg",
+      img2:"/images/websiteProject/sportCrush/img2.jpg",
+      img3:"/images/websiteProject/sportCrush/img3.jpg",
+      img4:"/images/websiteProject/sportCrush/img4.jpg",
+      role: "Developer",
+      date: "Nov 17, 2020",
+      skills: "HTML, CSS, JavaScript",
+      url: "",
+      p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim.",
+      p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim."
+    }
+  ];
+  
+  export const webApp = [
+    {
+      id: 1,
+      title: "Finance App",
+      img1:"/images/webApp/finance/img1.jpg",
+      img2:"/images/webApp/finance/img2.jpg",
+      img3:"/images/webApp/finance/img3.jpg",
+      img4:"/images/webApp/finance/img4.jpg",
       role: "Developer",
       date: "Jun 25, 2021",
-      skills: "React, Firebase, Material UI",
+      skills: "React, Sass, Firebase, Material, GitHub",
       url: "https://finance-app-a9684.web.app/login",
-      p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim. Aliquam vel tellus condimentum, scelerisque felis eu, fermentum urna. Suspendisse molestie congue eros, et blandit dolor. Mauris porttitor tincidunt eros eget iaculis.",
-      p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim. Aliquam vel tellus condimentum, scelerisque felis eu, fermentum urna. Suspendisse molestie congue eros, et blandit dolor. Mauris porttitor tincidunt eros eget iaculis."
-    },
-    {
-      id: 3,
-      title: "E-commerce Web Design",
-      img1:
-        "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 4,
-      title: "Relax Mobile App",
-      img1:
-        "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 5,
-      title: "Hero Web Design",
-      img1:
-        "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 6,
-      title: "Banking App",
-      img1:
-        "https://cdn.dribbble.com/users/3307260/screenshots/15468444/media/447b4501f7a145b05e11c70199a9c417.jpg?compress=1&resize=1200x900",
-    },
-  ];
-  
-  export const webPortfolio = [
-    {
-      id: 1,
-      title: "Web Social Media App",
-      img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+      p1:"This app is the financial application. In short, it's the household account book app with login function. As a background story, my motive to develop this app was that my mom used to manege the cash flow by hand writing and it looked like troublesome. And she said that it is difficult to select which application is easy-to-use so that I decided to create simple finance application for her. Of course, this app has been designed for mobile devices like iOS and Android because she usually carry her smartphone.",
+      p2:"I implemented user registration function, login function, saving and removing data, and managing financial data by each month(under constructing). For those functions, I implemented by using node, React(Hooks), Firebase(Authentication, Cloud Firestore, Hosting), and CSS/material-ui. As a repository service, I used Git/GitHub to create each branches to suppose that I will be part of the project member. The most difficult part was to handle React hooks(useState, useEffect, useContect), it took almost 3 weeks to learn these concept in React."
     },
     {
       id: 2,
-      title: "Web Rampa UI Design",
-      img: "https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900",
+      title: "Sake Lab",
+      img1:"/images/webApp/sakeLab/img1.jpg",
+      img2:"/images/webApp/sakeLab/img2.jpg",
+      img3:"/images/webApp/sakeLab/img3.jpg",
+      img4:"/images/webApp/sakeLab/img4.jpg",
+      role: "Developer",
+      date: "Aug 07, 2021",
+      skills: "JavaScript, Sass, Firebase, Cordova, PHP, Onsen UI",
+      url: "",
+      p1:"This app name is “Sake Lab”. In this app, user can browse the sake database to find the sake they look for as well as add them to the favorite list they own in accounts. This app consists of 5 main views, including the sign-up view, the home view, item detail views, the favorite-list view, and the setting view. Cross-site Scripting (XSS) exploit a client’s trust in a system. In the sign-in form, there is an input element which could be the security hole. As a countermeasure against this security issues, I used firebase authentication system.",
+      p2:"Through the sign-up form, user can create their account and login to the app. From the first viewing, user can access to the sake database to see sake’s information by clicking the detail button. In the item detail view, there are 2 call-to-actions. (Add-to-cart button, Favorite button) The add-to-cart button shows the toast. The favorite buttons will let user transfer to the favorite-list view with the selected item. In the favorite page, there is a remove function at the bottom of item card. In the setting page, user can manage the settings for functions and appearance of the app."
     },
     {
       id: 3,
-      title: "Web E-commerce Design",
-      img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
+      title: "Poke Dex App",
+      img1:"/images/webApp/pokeDex/img1.jpg",
+      img2:"/images/webApp/pokeDex/img2.jpg",
+      img3:"/images/webApp/pokeDex/img3.jpg",
+      img4:"/images/webApp/pokeDex/img4.jpg",
+      role: "Developer",
+      date: "Jun 14, 2021",
+      skills: "JavaScript, CSS, Cordova, Onsen UI, Pokemon API",
+      url: "",
+      p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim.",
+      p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim."
     },
     {
       id: 4,
-      title: "Web Relax App",
-      img: "https://cdn.dribbble.com/users/2264844/screenshots/15463998/media/d85e92a332c41094f68e1f716884f7ce.jpg?compress=1&resize=1200x900",
-    },
-    {
-      id: 5,
-      title: "Web Design",
-      img: "https://cdn.dribbble.com/users/387658/screenshots/15458608/media/e92ec1dd33dd1170ae3dc9c5272f2693.jpg?compress=1&resize=1200x900",
-    },
-    {
-      id: 6,
-      title: "Web Banking App",
-      img: "https://cdn.dribbble.com/users/6384483/screenshots/15468426/media/ce9479fa1f8dba3a4a49840d76e55e31.png?compress=1&resize=1200x900",
-    },
+      title: "Bamaga Dream Store",
+      img1:"/images/webApp/bamagaStore/img1.jpg",
+      img2:"/images/webApp/bamagaStore/img2.jpg",
+      img3:"/images/webApp/bamagaStore/img3.jpg",
+      img4:"/images/webApp/bamagaStore/img4.jpg",
+      role: "Developer",
+      date: "Jun 15, 2021",
+      skills: "JavaScript, CSS, Cordova, Onsen UI",
+      url: "",
+      p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim.",
+      p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim."
+    }
   ];
   
-  export const mobilePortfolio = [
+  export const webSite = [
     {
       id: 1,
-      title: "Mobile Social Media App",
-      img:
-        "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
+      title: "The Concept Lab",
+      img1:"/images/websiteProject/conceptLab/img1.jpg",
+      img2:"/images/websiteProject/conceptLab/img2.jpg",
+      img3:"/images/websiteProject/conceptLab/img3.jpg",
+      img4:"/images/websiteProject/conceptLab/img4.jpg",
+      role: "Developer",
+      date: "Aug 4, 2021",
+      skills: "HTML, Sass, PHP, JavaScript, Figma, Trello, GitHub",
+      url: "",
+      p1:"The Concept Lab is a company of four designers/developers who offer services in creating and maintaining various visual digital media and website development. The purpose of the website is to showcase its portfolio of work, promote its services, and create leads to generate new prospective clients. This is one of group projects in BCIT. We supposed that the targeted clients from small business owner or someone who needs help building a stronger online marketing presence with creating websites and social media presence.",
+      p2:"In this project, I was in charge of developer and listed testing tasks to Trello document except for coding in GitHub. Any bugs or issues encountered weere opened as Cards and placed under the Assigned list, and assigned to the Developer to fix. (https://trello.com/b/Ce1oaP7c/qa-concept-lab-qa-checklist) PHP contact mailer function exists at the bottom of the main page and it helps to get the message from clients. Clean and simple home page makes clients focus on the projects. All projects are coded through GitHub repository."
     },
     {
       id: 2,
-      title: "Mobile Rampa UI Design",
-      img:
-        "https://cdn.dribbble.com/users/5920881/screenshots/15463142/media/b5a460223798bd85d835710806e2f3dd.png?compress=1&resize=1200x900",
+      title: "Beach Resort",
+      img1:"/images/websiteProject/beachResort/img1.jpg",
+      img2:"/images/websiteProject/beachResort/img2.jpg",
+      img3:"/images/websiteProject/beachResort/img3.jpg",
+      img4:"/images/websiteProject/beachResort/img4.jpg",
+      role: "Developer",
+      date: "May 20, 2021",
+      skills: "HTML, CSS, JavaScript, GitHub",
+      url: "",
+      p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim.",
+      p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim."
     },
     {
       id: 3,
-      title: "Mobile E-commerce Design",
-      img:
-        "https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png?compress=1&resize=1200x900",
+      title: "Sport Crush",
+      img1:"/images/websiteProject/sportCrush/img1.jpg",
+      img2:"/images/websiteProject/sportCrush/img2.jpg",
+      img3:"/images/websiteProject/sportCrush/img3.jpg",
+      img4:"/images/websiteProject/sportCrush/img4.jpg",
+      role: "Developer",
+      date: "Nov 17, 2020",
+      skills: "HTML, CSS, JavaScript",
+      url: "",
+      p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim.",
+      p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim."
     },
     {
       id: 4,
-      title: "Mobile Relax App",
-      img:
-        "https://cdn.dribbble.com/users/2083704/screenshots/15468619/media/cd958306c7a772449e1ac23bd65ce506.png?compress=1&resize=1200x900",
+      title: "JavaScript Learning",
+      img1:"/images/websiteProject/jsLearning/img1.jpg",
+      img2:"/images/websiteProject/jsLearning/img2.jpg",
+      img3:"/images/websiteProject/jsLearning/img3.jpg",
+      img4:"/images/websiteProject/jsLearning/img4.jpg",
+      role: "Developer",
+      date: "Dec 02, 2020",
+      skills: "HTML, CSS, JavaScript, jQuery",
+      url: "",
+      p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim.",
+      p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim."
     },
     {
       id: 5,
-      title: "Mobile Hero Design",
-      img:
-        "https://cdn.dribbble.com/users/26642/screenshots/15462545/media/1a202ef5c8338b6f78634e6edc1ba350.png?compress=1&resize=1200x900",
+      title: "Photographer Portfolio",
+      img1:"/images/websiteProject/photography/img1.jpg",
+      img2:"/images/websiteProject/photography/img2.jpg",
+      img3:"/images/websiteProject/photography/img3.jpg",
+      img4:"/images/websiteProject/photography/img4.jpg",
+      role: "Developer",
+      date: "Nov 23, 2020",
+      skills: "HTML, CSS, JavaScript, jQuery(Accordion, Flickity, Gridder, LightBox)",
+      url: "",
+      p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim.",
+      p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim."
     },
     {
       id: 6,
-      title: "Mobile Banking App",
-      img:
-        "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
-    },
-  ];
-  
-  export const designPortfolio = [
-    {
-      id: 1,
-      title: "Design Social Media App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 2,
-      title: "Design Rampa UI Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 3,
-      title: "Design E-commerce Web Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 4,
-      title: "Design Relax Mobile App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 5,
-      title: "Design Keser Web Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 6,
-      title: "Design Banking App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-  ];
-  
-  export const contentPortfolio = [
-    {
-      id: 1,
-      title: "Content Social Media App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 2,
-      title: "Content Rampa UI Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 3,
-      title: "Content E-commerce Web Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 4,
-      title: "Content Relax Mobile App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 5,
-      title: "Content Keser Web Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 6,
-      title: "Content Banking App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+      title: "Wedding Park",
+      img1:"/images/websiteProject/weddingPark/img1.jpg",
+      img2:"/images/websiteProject/weddingPark/img2.jpg",
+      img3:"/images/websiteProject/weddingPark/img3.jpg",
+      img4:"/images/websiteProject/weddingPark/img4.jpg",
+      role: "Developer",
+      date: "Oct 18, 2020",
+      skills: "HTML, CSS, JavaScript, BootStrap",
+      url: "",
+      p1:"Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim.",
+      p2:"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie maximus nulla pharetra volutpat. Morbi orci orci, tempor at efficitur ut, feugiat eu arcu. Suspendisse non consectetur nunc. In congue et erat vitae sollicitudin. Fusce quis elit vestibulum, egestas arcu quis, facilisis sem. Nam sodales ligula nec sem euismod sagittis. Mauris ac dignissim ex. Nunc iaculis pharetra dolor, sed pellentesque ex molestie tristique. In vel metus nisl. Maecenas condimentum non dolor a auctor. Duis elementum neque ut lorem posuere dignissim."
     },
   ];
   
