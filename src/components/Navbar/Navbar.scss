@@ -14,9 +14,9 @@
     align-items: center;
     padding: 2px 20px;
     justify-content: space-between;
-    @include laptop {
-      background-color: #222;
-    }
+    // @include laptop {
+    //   background-color: #222;
+    // }
 
     .left {
       display: flex;
@@ -69,7 +69,7 @@
             text-decoration: none;
             text-transform: uppercase;
           }
-          :hover {
+          .active {
             color: aquamarine;
           }
         }
@@ -83,7 +83,7 @@
       }
     }
   }
-  &.active {
+  .wrapper.active {
     background-color: #222;
     color: white;
 

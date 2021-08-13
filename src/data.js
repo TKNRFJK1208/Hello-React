@@ -23,7 +23,7 @@ export const featuredProjects = [
       role: "Developer",
       date: "Aug 4, 2021",
       skills: "HTML, Sass, PHP, JavaScript, Figma, Trello, GitHub",
-      url: "",
+      url: "https://the-concept-lab.takanorifujiki.ca",
       p1:"The Concept Lab is a company of four designers/developers who offer services in creating and maintaining various visual digital media and website development. The purpose of the website is to showcase its portfolio of work, promote its services, and create leads to generate new prospective clients. This is one of group projects in BCIT. We supposed that the targeted clients from small business owner or someone who needs help building a stronger online marketing presence with creating websites and social media presence.",
       p2:"In this project, I was in charge of developer and listed testing tasks to Trello document except for coding in GitHub. Any bugs or issues encountered weere opened as Cards and placed under the Assigned list, and assigned to the Developer to fix. (https://trello.com/b/Ce1oaP7c/qa-concept-lab-qa-checklist) PHP contact mailer function exists at the bottom of the main page and it helps to get the message from clients. Clean and simple home page makes clients focus on the projects. All projects are coded through GitHub repository."
     },
@@ -155,7 +155,7 @@ export const featuredProjects = [
       role: "Developer",
       date: "Aug 4, 2021",
       skills: "HTML, Sass, PHP, JavaScript, Figma, Trello, GitHub",
-      url: "",
+      url: "https://the-concept-lab.takanorifujiki.ca",
       p1:"The Concept Lab is a company of four designers/developers who offer services in creating and maintaining various visual digital media and website development. The purpose of the website is to showcase its portfolio of work, promote its services, and create leads to generate new prospective clients. This is one of group projects in BCIT. We supposed that the targeted clients from small business owner or someone who needs help building a stronger online marketing presence with creating websites and social media presence.",
       p2:"In this project, I was in charge of developer and listed testing tasks to Trello document except for coding in GitHub. Any bugs or issues encountered weere opened as Cards and placed under the Assigned list, and assigned to the Developer to fix. (https://trello.com/b/Ce1oaP7c/qa-concept-lab-qa-checklist) PHP contact mailer function exists at the bottom of the main page and it helps to get the message from clients. Clean and simple home page makes clients focus on the projects. All projects are coded through GitHub repository."
     },

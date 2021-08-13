@@ -1,14 +1,29 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
-
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
+import { NavLink } from 'react-router-dom';
+
 function Navbar({ menuOpen, setMenuOpen }) {
+
+  const [wrapper, setWrapper] = useState(false);
+
+  const changeBackground = () => {
+    console.log(window.scrollY)
+    if(window.scrollY >= 10) {
+      setWrapper(true)
+    } else {
+      setWrapper(false)
+    }
+  };
+
+  window.addEventListener('scroll', changeBackground);
 
   return (
     <>
       <nav className={"topbar " + (menuOpen && "active")}>
-        <div className="wrapper">
+        <div className={wrapper ? 'wrapper active' : 'wrapper'}>
           <div className="left">
             <Link to='/' className="logo">
               <img src="images/navbar/logo.png" alt="" />
@@ -22,16 +37,16 @@ function Navbar({ menuOpen, setMenuOpen }) {
             </div>
             <ul>
               <li>
-                <Link to='/' className='nav-links'>Home</Link>
+                <NavLink exact to='/' className='nav-links'>Home</NavLink>
               </li>
               <li>
-                <Link to='/about' className='nav-links'>About</Link>
+                <NavLink to='/about' className='nav-links' activeClassName="active">About</NavLink>
               </li>
               <li>
-                <Link to='/work' className='nav-links'>Work</Link>
+                <NavLink to='/work' className='nav-links' activeClassName="active">Work</NavLink>
               </li>
               <li>
-                <Link to='/contact' className='nav-links'>Contact</Link>
+                <NavLink to='/contact' className='nav-links' activeClassName="active">Contact</NavLink>
               </li>
               <li>
                 <a href='https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:4c711f9d-8e60-41a6-a464-90ce4919bf50' className='nav-links' target="_blank" rel="noreferrer">Resume</a>

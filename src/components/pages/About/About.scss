@@ -26,7 +26,7 @@
     @include laptop {
       display: flex;
       flex-direction: row;
-      width: 85vw;
+      width: 80vw;
     }
 
     .col-left {
@@ -34,6 +34,14 @@
       @include laptop {
         flex-basis: 50%;
         max-width: 45%;
+        min-height: 700px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding-top: 0px;
+      }
+      @include desktop {
+        margin-left: 10%;
       }
       img {
         width: 300px;
@@ -46,8 +54,7 @@
           width: auto;
         }
         @include laptop {
-          width: 440px;
-          height: 440px;
+          height: 550px;
           width: auto;
         }
       }
@@ -58,15 +65,17 @@
       margin: 0 auto;
       @include laptop {
         flex-basis: 50%;
-        max-width: 55%;
+        max-width: 45%;
       }
 
-      h2 {
+      h3 {
         font-size: 1.2rem;
         font-weight: 500;
         letter-spacing: 0.2rem;
         margin: 10px 0 5px;
         padding-top: 30px;
+        font-weight: 700;
+        color: brown;
         @include tablet {
           font-size: 1.5rem;
         }
@@ -81,13 +90,21 @@
         @include tablet {
           font-size: 1.3rem;
         }
+        b {
+          color: #24d6cf;
+        }
       }
     }
+  }
+  h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    margin-top: 60px;
   }
   ul {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 50px));
-    margin-top: 60px;
+    margin-top: 30px;
     overflow: hidden;
     list-style: none;
     justify-content: center;
@@ -95,14 +112,17 @@
       grid-template-columns: repeat(2, minmax(140px, 200px));
     }
     @include laptop {
-      grid-template-columns: repeat(2, minmax(140px, 400px));
+      grid-template-columns: repeat(3, minmax(140px, 300px));
+    }
+    @include desktop {
+      grid-template-columns: repeat(3, minmax(140px, 350px));
     }
 
     .skill_list {
       position: relative;
       margin-bottom: 10px;
       font-size: 1rem;
-      color: #222;
+      color: #fff;
       @include tablet {
         font-size: 1.5rem;
         margin-bottom: 30px;

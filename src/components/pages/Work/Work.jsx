@@ -66,24 +66,6 @@ export default function Work() {
         ReactDom.render(
           <div className="container">
             <h2>{project.title}</h2>
-            <section className="sec1">
-              <div className="col-left">
-                <h3>Overview</h3>
-                <p>{project.p1}</p>
-              </div>
-              <div className="col-right">
-                <img src={project.img1} alt={project.title} />
-              </div>
-            </section>
-            <section className="sec2">
-              <div className="col-right">
-                <h3>Coding Process</h3>
-                <p>{project.p2}</p>
-              </div>
-              <div class="col-left">
-                <img src={project.img2} alt={project.title} />
-              </div>
-            </section>
             <section className="detail">
               <div className="col-left">
                 <div className="title">
@@ -104,6 +86,24 @@ export default function Work() {
                   <p><b>skills</b></p>
                   <p>{project.skills}</p>
                 </div>
+              </div>
+            </section>
+            <section className="sec1">
+              <div className="col-left">
+                <h3>Overview</h3>
+                <p>{project.p1}</p>
+              </div>
+              <div className="col-right">
+                <img src={project.img1} alt={project.title} />
+              </div>
+            </section>
+            <section className="sec2">
+              <div className="col-right">
+                <h3>Coding Process</h3>
+                <p>{project.p2}</p>
+              </div>
+              <div class="col-left">
+                <img src={project.img2} alt={project.title} />
               </div>
             </section>
             <section className="sec3">

@@ -5,20 +5,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 150px 0;
-
-  h1 {
-    margin-bottom: 30px;
-    @include laptop {
-      margin-bottom: 50px;
-    }
-  }
+  padding-top: 50px;
+  text-align: left;
+  max-width: 500px;
 
   input {
     margin-bottom: 50px;
     min-width: 500px;
     margin: 0 auto;
+    height: 30px;
 
     textarea {
       padding: 20px;
@@ -32,19 +27,18 @@
     }
   }
 
-  textarea {
-    height: 150px;
-    min-width: 500px;
-    min-height: 300px;
-    margin: 0 auto;
-    border-radius: 3px;
-  }
-
-  label {
+  p {
     padding: 15px;
     color: #fff;
     font-weight: bold;
     font-size: 2rem;
+    max-width: 500px;
+  }
+  textarea {
+    height: 200px;
+    min-width: 500px;
+    margin: 0 auto;
+    border-radius: 3px;
   }
 
   button {

@@ -13,7 +13,7 @@ export default function NotFoundPage() {
           <div className="error-img">
             <img src="images/404/404.jpg" className="pf-img" alt="profile" />
             <button>
-              <Link  to="/">Go to Home </Link>
+              <Link  to="/"><p>Go to Home</p></Link>
             </button>
           </div>
         </div>

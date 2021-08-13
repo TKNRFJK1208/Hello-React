@@ -7,7 +7,7 @@ export default function ContactForm () {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const [loader, setLoader] = useState(false);
+  const [setLoader] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,36 +34,34 @@ export default function ContactForm () {
   };
 
   return (
-    <form className="form" onSubmit={handleSubmit}>
-      <h1>Contact Me</h1>
+    <>
+      <form className="form" onSubmit={handleSubmit}>
 
-      <label>Name</label>
-      <input
-        placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
+        <p>Name</p>
+        <input
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
 
-      <label>Email</label>
-      <input
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
+        <p>Email</p>
+        <input
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
 
-      <label>Message</label>
-      <textarea
-        placeholder="Message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      ></textarea>
+        <p>Message</p>
+        <textarea
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        ></textarea>
 
-      <button
-        type="submit"
-      >
-        Submit
-      </button>
-    </form>
+        <button
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </>
   );
 }
 
